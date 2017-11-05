@@ -4,6 +4,9 @@ before_build:
 
 build:
   project: SecurionPay.Core.sln     # path to Visual Studio solution or project
+
+configuration:
+  - Release
   
 artifacts:
   - path: SecurionPay.Core\bin\Release\*.dll

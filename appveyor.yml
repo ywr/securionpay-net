@@ -9,6 +9,6 @@ configuration:
   - Release
   
 artifacts:
-  - path: SecurionPay.Core\bin\Release\*.dll
+  - path: SecurionPay.Core\bin\Release\
     name: CoreApp
   

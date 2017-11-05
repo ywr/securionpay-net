@@ -1,6 +1,11 @@
 before_build:
-  - nuget restore SecurionPay.sln
+  - nuget restore SecurionPay.Core.sln
   - ps: .\setup_integration_tests.ps1 "https://api.securionpay.com/" "https://uploads.securionpay.com" "pr_test_FjW0q2HMs40Jj3KGua5294sp"
 
 build:
-  project: SecurionPay.sln     # path to Visual Studio solution or project
+  project: SecurionPay.Core.sln     # path to Visual Studio solution or project
+  
+artifacts:
+  - path: SecurionPay.Core\bin\Release\*.dll
+    name: CoreApp
+  

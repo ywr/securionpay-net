@@ -9,6 +9,6 @@ configuration:
   - Release
   
 artifacts:
-  - path: '**\*.dll'
+  - path: '**\*.*'
     name: CoreApp
   
